@@ -12,6 +12,7 @@ function App() {
         <ThemeContext.Provider value={{theme, setTheme,}}>
             <div className={`${theme === "light" ? "light" : "dark"}`}>
                 <Header/>
+
             </div>
         </ThemeContext.Provider>
     );
