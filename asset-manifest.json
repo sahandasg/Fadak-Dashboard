@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fadak-Dashboard/static/css/main.0c32fe86.css",
+    "main.js": "/Fadak-Dashboard/static/js/main.9636b020.js",
+    "index.html": "/Fadak-Dashboard/index.html",
+    "main.0c32fe86.css.map": "/Fadak-Dashboard/static/css/main.0c32fe86.css.map",
+    "main.9636b020.js.map": "/Fadak-Dashboard/static/js/main.9636b020.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c32fe86.css",
+    "static/js/main.9636b020.js"
+  ]
+}
