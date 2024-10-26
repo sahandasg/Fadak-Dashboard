@@ -2,7 +2,6 @@ import {useState} from "react";
 import ThemeContext from "./contexts/ThemeContext";
 import MainMenu from "./components/Menu/MainMenu/MainMenu";
 import Header from "./components/Header/Header";
-
 function App() {
     if (!localStorage.getItem("theme")) {
         localStorage.setItem("theme", "light")
@@ -12,6 +11,8 @@ function App() {
         localStorage.setItem("showSecondaryMenu", "false")
     }
     const [isShow, setIsShow] = useState(localStorage.getItem("showSecondaryMenu"));
+    const path = (window.location.pathname).split("/")
+    const [selectedMenu, setSelectedMenu] = useState(path[2]);
     const body = document.getElementById("body");
 
     if (body) {
@@ -22,8 +23,9 @@ function App() {
             }
         }
     }
+
     return (
-        <ThemeContext.Provider value={{theme, setTheme, isShow, setIsShow}}>
+        <ThemeContext.Provider value={{theme, setTheme, isShow, setIsShow, selectedMenu, setSelectedMenu}}>
             <div className={`${theme === "light" ? "light" : "dark"}`}>
                 <Header/>
                 <MainMenu/>

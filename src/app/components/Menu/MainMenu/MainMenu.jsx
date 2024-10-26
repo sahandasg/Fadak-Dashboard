@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import Tooltip, {tooltipClasses} from '@mui/material/Tooltip';
 import {styled} from '@mui/material/styles';
 import ThemeContext from "../../../contexts/ThemeContext";
+import SecondaryMenu from '../SecondaryMenu/SecondaryMenu';
 
 //icons
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
@@ -94,6 +95,10 @@ function MainMenu(props) {
                         <ChevronRightRoundedIcon/>
                     </p>
                 </div>
+            </div>
+            <div
+                className={`fixed bottom-0 w-44 bg-main text-secondary text-sm p-2 h-[calc(100vh-4rem)] border-r-[1.2px] border-divider transition-all ${contextData.isShow === "true" ? "left-16" : "md:left-[-7rem] left-[-12rem]"}`}>
+                <SecondaryMenu ShowSecondaryMenu={showSecondaryMenu}/>
             </div>
         </div>
     );
