@@ -2,6 +2,8 @@ import {useState} from "react";
 import ThemeContext from "./contexts/ThemeContext";
 import MainMenu from "./components/Menu/MainMenu/MainMenu";
 import Header from "./components/Header/Header";
+import Body from "./components/Body/Body";
+
 function App() {
     if (!localStorage.getItem("theme")) {
         localStorage.setItem("theme", "light")
@@ -24,11 +26,15 @@ function App() {
         }
     }
 
+    if (window.location.pathname === '/') {
+        window.location.replace('/dashboard/overview');
+    }
     return (
         <ThemeContext.Provider value={{theme, setTheme, isShow, setIsShow, selectedMenu, setSelectedMenu}}>
             <div className={`${theme === "light" ? "light" : "dark"}`}>
                 <Header/>
                 <MainMenu/>
+                <Body/>
             </div>
         </ThemeContext.Provider>
     );
