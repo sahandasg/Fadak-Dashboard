@@ -1,0 +1,23 @@
+.css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root, .css-f3f49t-MuiSvgIcon-root-MuiNativeSelect-icon {
+    color: var(--secondary) !important;
+}
+
+.css-x9vn98-MuiNativeSelect-select-MuiInputBase-input:not([multiple]) option, .css-x9vn98-MuiNativeSelect-select-MuiInputBase-input:not([multiple]) optgroup {
+    background-color: var(--input-bg) !important;
+}
+
+.css-x9vn98-MuiNativeSelect-select-MuiInputBase-input.css-x9vn98-MuiNativeSelect-select-MuiInputBase-input.css-x9vn98-MuiNativeSelect-select-MuiInputBase-input {
+    min-width: 20px !important;
+}
+
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select .MuiTablePagination-select {
+    text-align: center !important;
+}
+
+.css-1bjj79l-MuiTableCell-root-MuiTablePagination-root {
+    border: none !important;
+}
+
+.css-14747at-MuiTableCell-root, .css-174q18p-MuiTableCell-root, .css-10ukr6t-MuiTableCell-root {
+    border-bottom: 1.2px solid var(--second-divider) !important;
+}
