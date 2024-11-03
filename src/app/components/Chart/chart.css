@@ -1,0 +1,11 @@
+.css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tickLabel,
+.css-10d7jww-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-tickLabel {
+    fill: var(--secondary) !important;
+}
+
+.css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-line,
+.css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tick,
+.css-10d7jww-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-line,
+.css-10d7jww-MuiChartsAxis-root-MuiChartsYAxis-root .MuiChartsAxis-tick {
+    stroke: var(--secondary) !important;
+}
