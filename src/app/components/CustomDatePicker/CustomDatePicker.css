@@ -1,0 +1,17 @@
+.css-1f6m251-MuiFormControl-root-MuiTextField-root {
+    width: 50%;
+}
+
+.css-lxfshk-MuiInputBase-root-MuiOutlinedInput-root {
+    background-color: var(--input-bg);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+}
+
+.css-1df20ln-MuiInputBase-input-MuiOutlinedInput-input, .css-1a7z5rc-MuiButtonBase-root-MuiIconButton-root {
+    color: var(--secondary) !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
